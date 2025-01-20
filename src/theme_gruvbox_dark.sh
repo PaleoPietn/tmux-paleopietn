@@ -61,7 +61,7 @@ theme_set_dark() {
   tmux_append_setwo "window-status-separator" ""
 
   local _primary_color=${col_yellow}
-  tmux_append_seto "status-left" "#[bg=${_primary_color},fg=${col_fg3}] #[bg=${col_bg1},fg=${_primary_color},nobold,noitalics,nounderscore]"
+  tmux_append_seto "status-left" "#[bg=${_primary_color},fg=${col_fg3}] ${_left_status_a} #[bg=${col_bg1},fg=${_primary_color},nobold,noitalics,nounderscore]"
 
   # right status
   local _status_right_bg=${col_bg1}
